@@ -8,11 +8,11 @@ class OnboardingCardWidget extends StatelessWidget {
   final String description;
 
   const OnboardingCardWidget({
-    Key? key,
+    super.key,
     required this.image,
     required this.title,
     required this.description,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

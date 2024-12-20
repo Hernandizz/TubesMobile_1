@@ -4,7 +4,7 @@ import '../utils/route_utils.dart';
 import '../constants/color_constants.dart';
 
 class MainApp extends StatelessWidget {
-  const MainApp({Key? key}) : super(key: key);
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {

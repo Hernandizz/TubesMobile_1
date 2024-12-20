@@ -11,7 +11,7 @@ import '../../../core/global_component/ButtonComponent.dart';
 class OnboardingScreen extends StatelessWidget {
   final controller = Get.put(OnboardingController());
 
-  OnboardingScreen({Key? key}) : super(key: key);
+  OnboardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class OnboardingScreen extends StatelessWidget {
             Expanded(
               child: PageView(
                 onPageChanged: (index) => controller.currentPage.value = index,
-                children: [
+                children: const [
                   OnboardingCardWidget(
                     image: ImageConstants.ingredients,
                     title: StringConstants.explore,

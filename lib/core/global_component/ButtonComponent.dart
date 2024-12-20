@@ -7,11 +7,11 @@ class ButtonComponent extends StatelessWidget {
   final bool isPrimary;
 
   const ButtonComponent({
-    Key? key,
+    super.key,
     required this.text,
     required this.onPressed,
     this.isPrimary = true,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
